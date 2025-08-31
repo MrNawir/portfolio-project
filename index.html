@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="top-nav">
+      <a href="#home">Home</a>                                                
+      <a href="#about">About</a>                                              
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>                                                                  
+  </header>
+
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="card">
+      <img class="avatar" src="images/profile_face_image.jpeg" alt="Profile photo" />
+      <h1 class="title">Ibrahim Nawir</h1>
+      <p class="intro">I’m a student learning web development. I enjoy turning ideas into simple pages and improving a little every day.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>I’m currently studying programming. My background includes basic HTML, CSS, and JavaScript. I want to code because I like solving problems and building useful things.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul class="list two-col">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Basic JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>Teamwork</li>
+        <li>Communication</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <article class="project">
+        <img src="images/profile.png" alt="Project thumbnail: Profile Card" />
+        <div>
+          <h3>Profile Card</h3>
+          <p class="tags">HTML, CSS</p>
+          <p>A simple profile card with a clean layout.</p>
+        </div>
+      </article>
+      <article class="project">
+        <img src="images/menu.png" alt="Project thumbnail: Restaurant Menu" />
+        <div>
+          <h3>Restaurant Menu</h3>
+          <p class="tags">HTML, CSS</p>
+          <p>A menu page with cards and subtle hover effects.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea name="message" rows="4" placeholder="Write a short message..." required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Your Name</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
